@@ -1,0 +1,14 @@
+#testingExternalStyling{
+    color: aquamarine;
+}
+
+.c-red{
+    color: red;
+}
+
+.f-font{
+    font-family: fantasy;
+}
+.s-size{
+    font-size: 30px;
+}
