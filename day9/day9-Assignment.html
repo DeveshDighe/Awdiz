@@ -37,11 +37,47 @@
 </head>
 
 <body>
+    <!-- Tesing id selector (#)-->
     <div id="internalIDTesting">This is internal id</div><br>
 
+    <!-- Tesing class selector (.)-->
     <div class="testingClass">This is internal class</div><br>
 
+    <!-- Tesing element.Class selector (element.)-->
     <p class="testingClass">This is internal class for p</p><br>
+
+    <!-- Tesing Element selector (Element)-->
+    <p>This is Element type selector</p><br>
+
+    <!-- Tesing Decendant selector (Space)-->
+    <p>This is <em>Decendant</em> type selector <strong>Used strong tag here <em>And em tag</em></strong></p><br>
+
+    <!-- Tesing child selector (>)-->
+    <span>This is <em>child</em> type selector <strong>Used strong tag <em>And em tag</em></strong></span><br>
+
+    <!-- Testing Adjacent sibling selectors (+) -->
+    <h3>Heading</h3>
+    <p>First paragraph</p>
+    <p>Second paragraph</p>
+    <p>Third paragraph</p>
+    <p>Fourth paragraph</p>
+
+    <!-- Testing Genaral sibling selectors (~)-->
+    <h2>Heading</h2>
+    <p>First paragraph</p>
+    <p>Second paragraph</p>
+    <p>Third paragraph</p>
+
+    <!-- Attribute selector -->
+    <form action="">
+   <input type="text" placeholder="First Name" >
+   <input type="text" placeholder="Second Name">
+   <input type="email" placeholder="Email" autofocus></form>
+    
+
+    <a href="https://www.google.com/search?q=Descendant&rlz=1C1RXQR_enIN1072IN1072&sourceid=chrome&ie=UTF-8">This is a tag</a>
+    <a href="https://www.google.com/search?q=Descendant&rlz=1C1RXQR_enIN1072IN1072&sourceid=chrome&ie=UTF-8" target="_self">This is a tag</a>
+    
 
     <h1>This is h1 tag</h1><br>
 
@@ -51,8 +87,14 @@
 
     <h1 id="testingExternalStyling">This is example of external styling</h1>
 
-    <p class="c-red s-size f-font">This is example of multiple external class</p>
+    <p class="c-red s-size f-font">This is example of multiple external class <p>111111</p> <p>22222222</p></p>
 
+    <div class="c-red">
+        <p>First paragraph</p>
+        <p>second paragraph</p>
+        <p>Third paragraph</p>
+        <p>Fourth paragraph</p>
+    </div>
     <div style="height: 400px; width: 800px; background-color: burlywood;">
         <h1 style="color: black; font-size: 30px;">HII</h1>
         <h1 style="color: black; font-size: 30px;">HII</h1>
@@ -103,6 +145,8 @@
     <div style="height: 300px ; width: 300px; border: 2px solid black; border-radius: 50%;"></div><br>
 
     <div style="height: 300px ; width: 300px; border: 2px solid black; border-radius: 80px;"></div>
+
+    <div style="height: 300px ; width: 300px; border: 1px solid black; border-width: 1px 10px 20px 30px; "></div>
 </body>
 
 </html>

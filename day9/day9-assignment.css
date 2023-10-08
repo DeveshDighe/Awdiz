@@ -1,7 +1,12 @@
+
+/* Id Selector (#) */
 #testingExternalStyling{
     color: aquamarine;
 }
 
+
+
+/* Class selector (.)*/
 .c-red{
     color: red;
 }
@@ -11,4 +16,57 @@
 }
 .s-size{
     font-size: 30px;
+}
+
+/* element selector (element)*/
+
+/* p{
+    color: blue;
+} */
+
+/* decendent selectors (space)*/
+p em{
+    color: brown;
+}
+
+/* child selectors (>)*/
+span>em{
+    color: red;
+}
+
+/* Adjacent sibling selectors (+) */
+h3 + p{
+    color: deeppink;
+}
+
+/* Genaral sibling selectors (~)*/
+h2 ~ p{
+    color: yellowgreen;
+}
+
+/* Attribute selector */
+input[type ='text']{
+    border: 2px solid red;
+}
+
+a[href]{
+    color: red;
+}
+a[target="_self"]{
+    color: blue;
+}
+
+/* pseudo-class selectors */
+a:hover{
+    color: rgb(71, 182, 126);
+}
+
+.c-red p:first-child{
+    color: rgb(20, 129, 255);
+}
+
+/* pseudo-element selector */
+p::first-letter{
+    font-size: 20px;
+    color: cyan;
 }
