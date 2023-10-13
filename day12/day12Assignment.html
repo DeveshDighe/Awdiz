@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+
+        <title>day 12</title>
+        <link href="https://fonts.googleapis.com/css2?family=Exo+2&family=Tauri&display=swap" rel="stylesheet">
+
+
+        <script src="https://kit.fontawesome.com/0d639a0714.js" crossorigin="anonymous"></script>
+
+        
+
+        <style>
+            p{
+                font-size: 30px;
+            }
+            body{
+                font-family: 'Exo 2', sans-serif;
+                padding: 25px;
+                
+            }
+
+            span{
+                font-size: 17px;
+            }
+            a:hover{
+                color: red;
+                background-color: black;
+                font-family: cursive;
+                font-size: 20px;
+            }
+
+            a:visited{
+                color: rgba(255, 251, 25, 0.836);
+                background-color: rgb(90, 141, 218);
+                font-family: cursive;
+                font-size: 20px;
+            }
+
+            a:active{
+                color: rgb(90, 217, 221);
+                background-color: rgb(219, 95, 95);
+                font-family: cursive;
+                font-size: 20px;
+            }
+
+            .hover:hover{
+                color: rgb(20, 130, 221);
+                background-color: rgb(241, 224, 224);
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                font-size: 20px;
+                cursor: pointer;
+            }
+
+            .border{
+                height: 300px;
+                max-width: 50%;
+                border: 2px solid black;
+                margin: auto;
+            }
+
+            .div{
+                
+                border: 3px solid black;
+                height: 200px;
+                width: 99%;
+            }
+            .static{
+                position: static;
+                border: 1px solid black;
+                height: 100px;
+                width: 49%;
+                margin: 20px auto;
+                
+            }
+            .relative{
+                position: relative ; 
+                left: 300px;
+                border: 1px solid black;
+                height: 100px;
+                width: 49%;
+                margin: 20px auto;
+                
+            }
+
+            .fixed{
+                position: fixed ; 
+                left:33px;
+                bottom: 20px;
+                border: 1px solid black;
+                height: 100px;
+                width: 49%;
+                margin: 20px auto;
+                background-color: rgb(192, 241, 224);
+                
+            }
+
+            .sticky{
+                position: sticky ;  
+                top: 0px;
+                border: 1px solid black;
+                height: 50px;
+                width: 99%;
+                margin-top: 20px auto;
+                background-color: rgb(241, 215, 181);
+                
+            }
+        </style>
+    </head>
+
+    <body>
+
+        <div class="sticky"><span style="padding-left: 45%;">relative sticky</span></div>
+
+        <p style="font-style: normal;">Using font style</p>
+        <p style="font-style: italic;">Using font style</p>
+        <p style="font-style: oblique;">Using font style</p>
+
+        <p style="font-weight: bold;">Using font weight bold</p>
+        <p style="font-weight: 900;">Using font weight bold</p>
+        <p style="font-weight: lighter;">Using font weight lighter</p>
+        <p style="font-weight: normal;">Using font weight normal</p>
+
+        <p style="font-variant: small-caps;">This is is Font Variant</p>
+
+        <p style="font-size: 3em;">Testing font size in em (16px = 1em) used 3em</p>
+
+        <i class="fas fa-cloud fa-2x"></i>
+
+        <i style="size: 40px;" class="bi bi-apple fa-2x"></i>
+        
+        <span class="material-symbols-outlined fa-2x"  style=" background-color: red; color: rgb(187, 255, 0);">
+            stadia_controller
+            </span>
+
+        <div style="margin-top: 20px;">
+        <a target="_blank" href="https://www.google.com/">google</a>
+        </div>
+
+        <p class="hover" style="font-size: 15px;" >facebook</p>
+
+        <div style="display: none;">Checking display</div>
+        
+        <div class="div">
+            <div class="static"> static </div>
+        </div>
+
+        <div class="div">
+            <div class="relative">relative left</div>
+        </div>
+
+        
+            <div class="fixed">relative fixed</div>
+        
+        
+        
+            
+        </div>
+        
+    </body>
+</html>
