@@ -1,0 +1,910 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://kit.fontawesome.com/5f3804d407.js" crossorigin="anonymous"></script>
+    <title>OnePlus</title>
+</head>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        font-family: 'OnePlus Sans Regular', 'Helvetica Neue', Helvetica, Arial, sans-serif, system-ui;
+        box-sizing: border-box;
+    }
+
+    #screen {
+        width: 100%;
+        /* border: 4px solid red; */
+        background-color: rgb(255, 254, 235);
+        ;
+    }
+
+    #navbar {
+        width: 100%;
+        /* height: 60px; */
+        /* border: 4px solid rgb(114, 243, 27); */
+    }
+
+    #navbarOne {
+        width: 100%;
+        /* border: 1px solid rgb(50, 255, 187); */
+        background-color: black;
+        height: 50px;
+        color: white;
+        display: flex;
+        justify-content: space-evenly;
+        text-align: center;
+        font-size: 16px;
+        padding-top: 15px;
+        cursor: pointer;
+
+
+    }
+
+    #navbarOne>p:nth-child(1) {
+        width: 22%;
+        /* border: 2px solid red; */
+    }
+
+    #navbarOne>p:nth-child(2) {
+        width: 50%;
+
+        /* border: 2px solid red; */
+    }
+
+    #navbarOne>p:nth-child(3) {
+        width: 22%;
+        /* border: 2px solid red; */
+        text-align: right;
+    }
+
+    #navbarTwo {
+        /* border: 1px solid red; */
+        height: 50px;
+        background-color: white;
+        display: flex;
+        justify-content: space-evenly;
+        font-size: 15px;
+        text-align: center;
+        padding-top: 3px;
+
+    }
+
+    #navbarTwo>div:nth-child(1) {
+        /* border: 1px solid green; */
+        height: 42px;
+        width: 38%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        cursor: pointer;
+    }
+
+    #imgdiv {
+        height: 23px;
+        width: 105px;
+    }
+
+    #Fistimg {
+        width: 100%;
+        height: 100%;
+    }
+
+    #navbarTwo>div:nth-child(2) {
+        /* border: 1px solid gold; */
+        height: 42px;
+        width: 50px;
+    }
+
+    #navbarTwo>div:nth-child(3) {
+        /* border: 1px solid gray; */
+        width: 38%;
+        height: 42px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        cursor: pointer;
+    }
+
+    .center{
+        text-align: center;
+        padding-top: 22px;
+    }
+    .animation1::after {
+        content: '';
+        display: flex;
+        width: 0%;
+        height: 1px;
+        background-color: #ff0000;
+        margin-top: 12px;
+        transition: .3s;
+    }
+
+    .animation1:hover::after {
+        width: 100%;
+    }
+
+    #slidingImg {
+        width: 100%;
+        height: 700px;
+        /* border: 4px solid rgb(123, 255, 0); */
+        overflow: hidden;
+        cursor: pointer;
+    }
+
+    #AdImg {
+        height: 100%;
+        width: 180%;
+        margin-left: -750px;
+    }
+
+    #NewPhone {
+        width: 100%;
+        height: 570px;
+        /* border: 1px solid red; */
+        margin-bottom: 50px;
+
+    }
+
+    #NewPhone>div {
+        width: 70%;
+        height: 500px;
+        /* border: 1px solid rgb(44, 255, 25); */
+        margin: 70px 300px;
+
+    }
+
+    #flexig {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #Offer {
+        /* border: 1px solid rgb(10, 10, 10); */
+        width: 33%;
+        height: 100%;
+        padding-left: 0px;
+        font-weight: lighter;
+    }
+
+    #Offer>:nth-child(1) {
+        /* border: 1px solid rgb(255, 9, 9); */
+        width: 100%;
+        height: 70%;
+    }
+
+    #Offer>div>h1 {
+        padding-top: 20px;
+        font-size: 48px;
+        font-weight: lighter;
+    }
+
+    #Offer>div>h5 {
+        line-height: 50px;
+        font-size: 30px;
+        font-weight: lighter;
+    }
+
+    #Offer>:nth-child(2) {
+        /* border: 1px solid rgb(46, 23, 255); */
+        width: 100%;
+        height: 30%;
+    }
+
+    #Offer>div>p {
+        margin-top: 8px;
+        font-size: 15px;
+    }
+
+    #Offerdiscount {
+        padding-top: 20px;
+        font-size: 20px;
+    }
+
+    #ClickButtons {
+        padding-top: 20px;
+        width: 100%;
+        height: 100%;
+
+
+    }
+
+    #ClickButtons> :nth-child(1) {
+        border: 1px solid black;
+        text-align: center;
+        text-decoration: none;
+        background-color: black;
+        padding: 10px 62px;
+        margin-left: 5px;
+        margin-right: 5px;
+        color: white;
+        border-radius: 2px;
+        transition: 0.5s;
+
+    }
+
+    #ClickButtons> :nth-child(1):hover {
+        background-color: rgb(36, 39, 43);
+    }
+
+    #ClickButtons> :nth-child(2) {
+        border: 1px solid black;
+        text-align: center;
+        text-decoration: none;
+        width: 20%;
+        height: 30%;
+        padding: 10px 62px;
+        margin-left: 5px;
+        margin-right: 5px;
+        color: rgb(0, 0, 0);
+        border-radius: 2px;
+        transition: 0.5s;
+
+    }
+
+    #ClickButtons> :nth-child(2):hover {
+        background-color: rgb(223, 220, 199);
+
+    }
+
+    #OfferPhone {
+        /* border: 3px solid navy; */
+        width: 65%;
+        height: 100%;
+        overflow: hidden;
+        cursor: pointer;
+    }
+
+    #OfferPhone>img {
+        width: 100%;
+        height: 100%;
+        transition: 0.5s;
+    }
+
+    #OfferPhone>img:hover {
+        transform: scale(1.1);
+
+    }
+
+    #Pad_Headphones {
+        width: 100%;
+        height: 410px;
+        /* border: 1px solid red; */
+        margin-top: 10px;
+    }
+
+
+    #Pad_Headphones>div {
+        width: 70%;
+        height: 100%;
+        /* border: 1px solid rgb(44, 255, 25); */
+        margin: 70px 300px;
+        margin-top: 0px;
+        display: flex;
+        justify-content: space-between;
+        background-color: rgb(255, 254, 235);
+    }
+
+    #padAd {
+        height: 100%;
+        width: 49.5%;
+        /* border: 1px solid black; */
+        display: flex;
+        justify-content: space-between;
+        background-color: #FFF0C0;
+    }
+
+    #padOffer {
+        /* border: 1px solid red; */
+        height: 90%;
+        width: 50%;
+        margin: 20px;
+        margin-right: 10px;
+    }
+
+    #padOffer>div:nth-child(1) {
+        height: 50%;
+        width: 100%;
+        /* border: 1px solid blue; */
+        padding-bottom: 0px;
+
+    }
+
+
+    #padOffer>div>h2 {
+        font-weight: lighter;
+        font-size: 36px;
+        margin-top: 4px;
+    }
+
+    #padOffer>div:nth-child(2) {
+        height: 30%;
+        width: 100%;
+        /* border: 1px solid rgb(0, 0, 122); */
+
+
+    }
+
+    #padOffer>div>p:nth-child(1) {
+        margin-top: 8px;
+        font-weight: lighter;
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+    #padOffer>div>p:nth-child(2) {
+        font-weight: lighter;
+        font-size: 18px;
+        line-height: 30px;
+        margin-top: 16px;
+        font-weight: 500;
+
+    }
+
+    #padOffer>div:nth-child(3) {
+        height: 20%;
+        width: 100%;
+        /* border: 1px solid rgb(0, 0, 122); */
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 6px;
+
+    }
+
+    #Pre-Order {
+        text-decoration: none;
+        background-color: black;
+        color: #FFF0C0;
+        padding: 9px 20px;
+        font-size: 15px;
+        margin-right: 0px;
+        border: 1px solid black;
+        border-radius: 2px;
+        transition: 0.3s;
+
+    }
+
+    #Pre-Order:hover {
+        background-color: rgb(36, 39, 43);
+    }
+
+    #Learn_More {
+        text-decoration: none;
+        background-color: #FFF0C0;
+        color: #000000;
+        padding: 9px 28px;
+        font-size: 15px;
+        border: 1px solid black;
+        margin-right: 0px;
+        border-radius: 2px;
+        transition: 0.3s;
+    }
+
+    #Learn_More:hover {
+        background-color: #dfd3ac;
+
+    }
+
+    #padImg {
+        /* border: 1px solid red; */
+        height: 90%;
+        width: 49%;
+        margin: 20px;
+        margin-left: 5px;
+    }
+
+    #padImg>img {
+        height: 100%;
+        width: 100%;
+        transition: 0.3s;
+    }
+
+    #padImg>img:hover {
+        transform: scale(1.1);
+        cursor: pointer;
+    }
+
+    #neckBandAd {
+        height: 100%;
+        width: 49.5%;
+        /* border: 1px solid black; */
+        display: flex;
+        justify-content: space-between;
+        background-color: #FFF0C0;
+    }
+
+    #bandOffer {
+        /* border: 1px solid red; */
+        height: 90%;
+        width: 50%;
+        margin: 20px;
+        margin-right: 10px;
+    }
+
+    #bandOffer>div:nth-child(1) {
+        height: 55%;
+        width: 100%;
+        /* border: 1px solid blue; */
+        padding-bottom: 0px;
+        font-size: 24px;
+        line-height: 30px;
+
+    }
+
+
+    #bandOffer>div>h2 {
+        font-weight: 500;
+        font-size: 36px;
+        margin-top: 4px;
+        line-height: 45px;
+    }
+
+    #bandOffer>div:nth-child(2) {
+        height: 25%;
+        width: 100%;
+        /* border: 1px solid rgb(0, 0, 122); */
+
+
+    }
+
+    #bandOffer>div>p:nth-child(1) {
+        margin-top: 8px;
+        font-weight: lighter;
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+    #bandOffer>div>p:nth-child(2) {
+        font-weight: lighter;
+        font-size: 18px;
+        line-height: 30px;
+        margin-top: 16px;
+
+    }
+
+    #bandOffer>div:nth-child(3) {
+        height: 20%;
+        width: 100%;
+        /* border: 1px solid rgb(0, 0, 122); */
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 6px;
+
+    }
+
+    #Buy_Now {
+        text-decoration: none;
+        background-color: black;
+        color: #FFF0C0;
+        padding: 9px 38px;
+        font-size: 15px;
+        margin-right: 0px;
+        /* border: 1px solid black; */
+        border-radius: 2px;
+        transition: 0.3s;
+
+    }
+
+    #Buy_Now:hover {
+        background-color: rgb(36, 39, 43);
+
+    }
+
+    #Learn_More_Two {
+        text-decoration: none;
+        background-color: #FFF0C0;
+        color: #000000;
+        padding: 9px 28px;
+        font-size: 15px;
+        border: 1px solid black;
+        margin-right: 0px;
+        border-radius: 2px;
+        transition: 0.3s;
+    }
+
+    #Learn_More_Two:hover {
+        background-color: #dfd3ac;
+    }
+
+    #bandImg {
+        /* border: 1px solid red; */
+        height: 90%;
+        width: 49%;
+        margin: 20px;
+        margin-left: 5px;
+    }
+
+    #bandImg>img {
+        height: 100%;
+        width: 100%;
+        transition: 0.3s;
+    }
+
+    #bandImg>img:hover {
+        transform: scale(1.1);
+        cursor: pointer;
+    }
+
+    #Hotpics {
+        width: 70%;
+        height: 100%;
+        /* border: 1px solid green; */
+        margin: 50px 300px;
+        margin-bottom: 0px;
+    }
+
+    #Hotpics_H1 {
+        font-weight: lighter;
+        font-size: 21px;
+        opacity: 0.7;
+    }
+
+    #Hr {
+        opacity: 0.3;
+        align-items: center;
+    }
+
+    #hr_div {
+        width: 70%;
+        margin: 20px 300px;
+
+    }
+
+    #item_list {
+        width: 34.5%;
+        height: 100%;
+        /* border: 1px solid #ff0000; */
+        margin: 30px 300px;
+        cursor: pointer;
+
+    }
+
+    #item_list>ul {
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+        font-size: 18px;
+        font-weight: lighter;
+        padding-right: 8px;
+        padding-bottom: 8PX;
+    }
+    .animation::after {
+        content: '';
+        display: flex;
+        width: 0%;
+        height: 1px;
+        background-color: #ff0000;
+        margin-top: 6px;
+        transition: .3s;
+    }
+
+    .animation:hover::after {
+        width: 100%;
+    }
+    
+
+    #itemImagesdiv {
+        width: 70%;
+        height: 510px;
+        /* border: 1px solid red; */
+        margin: 70px 300px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #itemImagesdiv>div:nth-child(1) {
+        width: 24%;
+        height: 100%;
+        /* border: 1px solid red; */
+    }
+
+    #itemImagesdiv>div:nth-child(2) {
+        width: 24%;
+        height: 100%;
+        /* border: 1px solid red; */
+    }
+
+    #itemImagesdiv>div:nth-child(3) {
+        width: 24%;
+        height: 100%;
+        /* border: 1px solid red; */
+    }
+
+    #itemImagesdiv>div:nth-child(4) {
+        width: 24%;
+        height: 100%;
+        /* border: 1px solid red; */
+    }
+
+    .img {
+        width: 100%;
+        height: 65%;
+        /* border: 1px solid green; */
+        background-color: rgb(255,240,192);
+    }
+    .img>img{
+        width: 100%;
+        height: 100%;
+        transition: 0.2s;
+        cursor: pointer;
+    }
+
+    .img>img:hover{
+        transform: scale(1.1);
+    }
+    .itemName_offer {
+        width: 100%;
+        height: 28%;
+        /* border: 1px solid green; */
+    }
+    .itemName_offer>h2{
+        font-weight: lighter;
+        font: 24px;
+        padding-top: 20px;
+    }
+    .itemName_offer>span{
+        font-weight: lighter;
+        font-size: 12px;
+        letter-spacing: 0.2px;
+        margin-top: 10px;
+        display: inline-block;
+        opacity: 0.7;
+    }
+    .itemName_offer>p{
+        font-weight: lighter;
+        font-size: 15px;
+        margin-top: 10px;
+    }
+
+    .itemPrice {
+        display: flex;
+        width: 100%;
+        height: 7%;
+        /* border: 1px solid rgb(0, 102, 255); */
+        align-items: center;
+        overflow: hidden;
+    
+        
+    }
+
+    .itemPrice>a{
+        display: inline-block;
+        text-decoration: none;
+        margin-top: 0px;
+        font-size: 15px;
+        font-weight: lighter;
+        color: black;
+        padding:  7px 194px 13px 2px;
+        background-color: rgb(255,254,235);
+        margin-top: 0px;
+        overflow: hidden;
+        align-self: center;
+        margin: auto;
+        transition: 0.3s; 
+    }
+    .itemPrice>a:hover{
+        background-color: black;
+        color: rgb(255, 254, 235);
+        overflow: hidden;
+        padding: 7px 121px 13px 75px;
+        
+    }
+    .budspriceitemPrice{
+        display: flex;
+        width: 100%;
+        height: 7%;
+        /* border: 1px solid rgb(0, 102, 255); */
+        align-items: center;
+        overflow: hidden;
+    }
+    .budspriceitemPrice>a{
+        display: inline-block;
+        text-decoration: none;
+        margin-top: 0px;
+        font-size: 15px;
+        font-weight: lighter;
+        color: black;
+        padding: 7px 211px 10px 2px;
+        background-color: rgb(255,254,235);
+        margin-top: 0px;
+        overflow: hidden;
+        align-self: center;
+        margin: auto;
+        transition: 0.3s;
+    
+    }
+    .budspriceitemPrice>a:hover{
+        background-color: black;
+        color: rgb(255, 254, 235);
+        overflow: hidden;
+        padding: 7px 114px 13px 99px;
+    }
+    .itemPrice>a>span{
+        padding-left: 8px;
+        overflow: hidden;    
+    }
+
+    
+    #body {
+        width: 100%;
+        height: 1000px;
+        /* border: 5px solid blue; */
+
+    }
+
+    #footer {
+        width: 100%;
+        height: 200px;
+        /* border: 5px solid purple; */
+    }
+</style>
+
+<body>
+    <div id="screen">
+        <div id="navbar">
+            <div id="navbarOne">
+                <p></p>
+                <p>Hit ‘Notify Me’ and stand a chance to win a OnePlus Open. Notify Me ›</p>
+                <p><i class="fa-solid fa-x"></i></p>
+            </div>
+            <div id="navbarTwo">
+                <div>
+                    <div id="imgdiv">
+                        <img id="Fistimg" src="https://cdn.worldvectorlogo.com/logos/oneplus-wordmark-4.svg" alt="">
+                    </div>
+                    <div class="animation1 center">Phone</div>
+                    <div class="animation1 center">TV & Display</div>
+                    <div class="animation1 center">Audio & Watch</div>
+                    <div class="animation1 center">Tablet</div>
+                    <div class="animation1 center">Accessories</div>
+                    <div class="animation1 center">Offers</div>
+                </div>
+                <div></div>
+                <div>
+                    <div class="animation1 center">store</div>
+                    <div class="animation1 center">OneTopia</div>
+                    <div class="animation1 center">OnePlus Featuring</div>
+                    <div class="animation1 center">Community</div>
+                    <div class="animation1 center">Support</div>
+                    <div><i class="fa-solid fa-magnifying-glass animation1 center"></i></div>
+                    <div><i class="fa-solid fa-cart-shopping animation1 center"></i></div>
+                    <div><i class="fa-regular fa-user animation1 center"></i></div>
+                </div>
+            </div>
+        </div>
+
+        <div id="slidingImg">
+            <img id="AdImg"
+                src="https://www.oneplus.in/content/dam/oasis/page/2023/in/home/diwali/diwali_lunch-desktop.jpg.thumb.webp"
+                alt="">
+        </div>
+
+        <div id="NewPhone">
+            <div id="flexig">
+                <div id="Offer">
+                    <div>
+                        <h1>OnePlus Nord CE3</h1>
+                        <h5>5G</h5>
+                    </div>
+                    <div>
+                        <p>Save ₹2 000 with coupon. Save up to ₹1000 with RedCoins.</p>
+                        <div id="Offerdiscount">From ₹22 999* <br> *Incl. bank discount</div>
+                        <div id="ClickButtons">
+                            <a href="#">Buy Now</a>
+                            <a href="#">Learn More</a>
+                        </div>
+
+
+                    </div>
+
+                </div>
+                <div id="OfferPhone">
+                    <img src="https://www.oneplus.in/content/dam/oasis/page/2023/in/home/diwali/1009/new/01-pc.jpg.thumb.webp"
+                        alt="">
+                </div>
+
+            </div>
+        </div>
+
+        <div id="Pad_Headphones">
+            <div>
+                <div id="padAd">
+                    <div id="padOffer">
+                        <div>
+                            <h2>OnePlus Pad Go</h2>
+                        </div>
+                        <div>
+                            <p>Pre-order is live! (8+128 GB variant only).<br>
+                                Get a free Go Folio Case with Pre-order post delivery. Pre-order ends on 20th Oct
+                            </p>
+                            <p>From ₹17,999 *Incl. bank Discount</p>
+                        </div>
+                        <div>
+                            <div><a id="Pre-Order" href="#">Pre-order Now</a></div>
+                            <div><a id="Learn_More" href="#">Learn More</a></div>
+                        </div>
+                    </div>
+                    <div id="padImg">
+                        <img src="https://www.oneplus.in/content/dam/oasis/page/2023/in/medium-product-card/Bluey-%E4%B8%AD%E4%BA%A7%E5%93%81%E5%8D%A1-pc-10.6.png.thumb.webp"
+                            alt="">
+                    </div>
+                </div>
+                <div id="neckBandAd">
+                    <div id="bandOffer">
+                        <div>
+                            <h2>OnePlus Bullets Wireless Z2</h2>
+                        </div>
+                        <div>
+                            <p>Save extra up to ₹200 by using the APP exclusive coupon</p>
+                            <p>At ₹1349 *Incl. bank discount</p>
+                        </div>
+                        <div>
+                            <div><a id="Buy_Now" href="#">Buy Now</a></div>
+                            <div><a id="Learn_More_Two" href="#">Learn More</a></div>
+                        </div>
+                    </div>
+                    <div id="bandImg">
+                        <img src="https://www.oneplus.in/content/dam/oasis/page/2023/in/medium-product-card/pc-7.12-1.png.thumb.webp"
+                            alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="Hotpics">
+            <h2 id="Hotpics_H1">This Week's Hot picks</h2>
+        </div>
+        <div id="hr_div">
+            <hr id="Hr">
+        </div>
+        <div id="item_list">
+            <ul>
+                <li class="animation">Highlights</li>
+                <li class="animation">Phones</li>
+                <li class="animation">TV & Display</li>
+                <li class="animation">Audio</li>
+                <li class="animation">Wearables</li>
+                <li class="animation">Accessories</li>
+            </ul>
+        </div>
+        <div id="itemImagesdiv">
+            <div>
+                <div class="img"><img src="https://image01-in.oneplus.net/ebp/202303/29/1-m00-50-fd-cpgm7wqj5riagurqaakzkxnnips198.png" alt=""></div>
+                <div class="itemName_offer">
+                    <h2>OnePlus Nord CE 3 Lite 5G</h2>
+                    <span>Save with RedCoins</span>
+                    <p>Save ₹500 with coupon</p>
+                </div>
+                <div class="itemPrice"><a href="#"><i class="fa-solid fa-cart-shopping"></i><span>From ₹19,999</span> </a></div>
+            </div>
+            <div>
+                <div class="img"><img src="https://image01-in.oneplus.net/ebp/202302/08/1-m00-4e-16-cpgm7mpjxnoabtqjaah4p22vdfq137.png" alt=""></div>
+                <div class="itemName_offer"><h2>OnePlus 11 5G</h2>
+                    <span>With Gift</span>
+                    <p>Save ₹4 000 with coupon. Get free Buds Z2 on every purchase.</p></div>
+                <div class="itemPrice"><a href="#"><i class="fa-solid fa-cart-shopping"></i><span>From ₹56,999</span> </a></div>
+            </div>
+            <div>
+                <div class="img"><img src="https://image01-in.oneplus.net/ebp/202303/28/1-m00-50-fb-cpgm7wqiw0kacxzxaaj0aogerf8199.png" alt=""></div>
+                <div class="itemName_offer"><h2>OnePlus Nord Buds 2</h2>
+                    <p>Save extra up to ₹200 by using the APP exclusive coupon</p></div>
+                <div class="budspriceitemPrice"><a href="#"><i class="fa-solid fa-cart-shopping"></i><span>From ₹2,999</span> </a></div>
+            </div>
+            <div>
+                <div class="img"><img src="https://image01-in.oneplus.net/ebp/202304/13/1-m00-51-1b-cpgm7wq35waawfbbaas0vraswfq234.png" alt=""></div>
+                <div class="itemName_offer"><h2>OnePlus Pad</h2>
+                    <p>Save ₹2000 with RCC Linked Device Coupon.</p></div>
+                <div class="itemPrice"><a href="#"><i class="fa-solid fa-cart-shopping"></i><span>From ₹35,499</span> </a></div>
+            </div>
+        </div>
+    </div>
+
+    <div id="footer">
+    </div>
+</body>
+
+</html>
