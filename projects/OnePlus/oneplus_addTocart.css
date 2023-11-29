@@ -1,0 +1,464 @@
+* {
+    font-family: 'OnePlus Sans Regular', 'Helvetica Neue', Helvetica, Arial, sans-serif, system-ui;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(244, 244, 244);
+}
+
+.img {
+    width: 70%;
+    height: 80%;
+    margin-left: 15px;
+
+}
+
+.contentMiddle {
+    display: grid;
+    grid-template-columns: repeat(1, 68%);
+    grid-template-rows: 170px 80px 140px 140px 140px 140px;
+    row-gap: 12px;
+    justify-content: center;
+    /* border: 1px solid red; */
+}
+
+#screen {
+    width: 100%;
+    height: 1000px;
+    /* height: 100vh; */
+    /* border: 1px solid rgb(31, 153, 0); */
+    background-color: rgb(244, 244, 244);
+}
+
+#cart {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+#cart>p>span:nth-child(1) {
+    font-size: 1.6rem;
+}
+
+#cart>p>span:nth-child(2) {
+    opacity: 0.4;
+}
+
+/* .border{
+    border: 1px solid red;
+} */
+
+
+#f {
+    /* margin-top: 15px; */
+    overflow: hidden;
+    width: 100%;
+    height: 80px;
+    /* border: 1px solid rgb(0, 217, 255); */
+    background-color: white;
+}
+
+#f>div {
+    margin-left: 20px;
+    /* border: 1px solid rgb(218, 32, 32); */
+    width: 25%;
+    position: relative;
+    animation-name: devesh;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+
+}
+
+@keyframes devesh {
+    0% {
+        bottom: 0px;
+
+    }
+
+     20% {
+        bottom: 0px;
+    }
+    /*
+    25% {
+        bottom: 35px;
+    } */
+
+    50% {
+        bottom: 70px;
+    }
+
+
+     70% {
+        bottom: 70px;
+    }
+
+    /*
+    75% {
+        bottom: 35px;
+    } */
+
+    100% {
+        bottom: 140px;
+    }
+
+
+}
+
+#f>div>div {
+    display: flex;
+    justify-content: space-between;
+    /* border: 1px solid rgb(128, 41, 0); */
+}
+
+#f>div>div>div {
+    /* border: 1px solid red; */
+    height: 70px;
+}
+
+#f>div>div>div:nth-child(1):nth-child(1) {
+    display: grid;
+    width: 15%;
+    align-items: center;
+}
+
+
+#truck {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+#coin {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.animation_Text>span:nth-child(1) {
+    display: inline-block;
+    font-size: 19px;
+    line-height: 40px;
+    padding-left: 20px;
+}
+
+.animation_Text>span:nth-child(2) {
+    display: inline-block;
+    font-size: 14px;
+    opacity: 0.7;
+    padding-left: 20px;
+}
+
+.animation_Text>span:nth-child(2)>span {
+    color: red;
+    font-size: 16px;
+}
+
+
+/* #animation{
+    display: grid;
+    background-color: rgb(255,255,255);
+} */
+/* #f{
+    border: 1px solid green;
+    display: grid;
+    grid-template-columns: 1;
+}
+
+#animation>div>div{
+    background-color: rgb(255,255,255);
+    display: grid;
+    width: 95%;
+    height: 80%;
+    border: 1px solid rgb(0, 140, 255);
+    grid-template-columns: 80px 300px;
+    grid-template-rows: 80px 80px;
+    place-self: center;
+    position: relative;
+    animation-name: devesh;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-delay: 1s;
+    animation-iteration-count: 2;
+    animation-fill-mode: backwards;
+    overflow: hidden;
+    margin-top: 20px;
+}
+#animation>div>div>div:nth-child(1){
+    display: grid;
+    place-items: center;
+    margin-bottom: 20px;
+    
+}
+#animation>div>div>div:nth-child(3){
+    display: grid;
+    place-items: center;
+    margin-bottom: 20px;
+    
+}
+#animation>div>div>div:nth-child(2){
+    display: grid;
+    align-items: center;
+    margin-bottom: 20px;
+
+}
+#animation>div>div>div:nth-child(4){
+    display: grid;
+    align-items: center;
+    margin-bottom: 20px;
+
+}
+#animation>div>div>div:nth-child(2)>span:nth-child(1){
+    display: inline-block;
+    font-size: 1.1rem;
+}
+#animation>div>div>div:nth-child(2)>span:nth-child(2){
+    display: inline-block;
+    font-size: 0.9rem;
+    opacity: 0.7;
+}
+#animation>div>div>div:nth-child(4)>span:nth-child(1){
+    display: inline-block;
+    font-size: 1.1rem;
+}
+#animation>div>div>div:nth-child(4)>span:nth-child(2){
+    display: inline-block;
+    font-size: 0.9rem;
+    opacity: 0.7;
+}
+*/
+
+
+
+
+
+.cart_Content {
+    display: grid;
+    background-color: rgb(255, 255, 255);
+
+}
+
+.cart_Content>div {
+    display: grid;
+    width: 95%;
+    height: 70%;
+    /* border: 1px solid rgb(0, 140, 255); */
+    place-self: center;
+    grid-template-columns: 9% 50% 41%;
+    grid-template-rows: 100%;
+}
+
+.cart_Content>div>div {
+    display: flex;
+    /* border: 1px solid rgb(0, 0, 0); */
+    align-items: center;
+}
+
+.cart_Content>div>div:nth-child(1) {
+    cursor: pointer;
+}
+
+.cart_Content>div>div:nth-child(2) {
+    cursor: pointer;
+}
+
+.ps {
+    width: 100%;
+    /* border: 1px solid green; */
+}
+
+.ps>p:nth-child(1) {
+    margin-bottom: 7px;
+    font-size: 1.25rem;
+}
+
+.ps>p:nth-child(2) {
+    display: inline-block;
+    opacity: 0.7;
+    font-size: 1.2rem;
+}
+
+.ps>p:nth-child(3) {
+    position: relative;
+    display: inline-block;
+    opacity: 0.7;
+    font-size: 1.1rem;
+}
+
+.Third_space {
+    /* height: 40%; */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.Third_space>div {
+    display: grid;
+    /* border: 1px solid rgb(0, 0, 0); */
+    width: auto;
+    height: 100%;
+    place-items: center;
+}
+
+.Third_space>div:nth-child(1) {
+    font-size: 1.5rem;
+
+}
+
+.Third_space>div:nth-child(3) {
+    font-size: 1.5rem;
+    justify-self: right;
+    align-self: top;
+    opacity: 0.5;
+    cursor: pointer;
+
+}
+
+.Third_space>div:nth-child(3):hover {
+    opacity: 0.7;
+
+}
+
+.Quantity {
+    display: grid;
+    grid-template-columns: 28% 44% 28%;
+    /* border: 1px solid red; */
+    height: 25px;
+    width: 50%;
+}
+
+.Quantity>div {
+    display: grid;
+    place-items: center;
+}
+
+.Quantity>div:nth-child(1) {
+
+    border-top: 1px solid rgb(209, 205, 205);
+    border-left: 1px solid rgb(209, 205, 205);
+    border-bottom: 1px solid rgb(209, 205, 205);
+
+}
+
+.Quantity>div:nth-child(1)>i {
+    opacity: 0.6;
+}
+
+
+.Quantity>div:nth-child(2) {
+    border: 1px solid rgb(209, 205, 205);
+
+}
+
+.Quantity>div:nth-child(3) {
+    border-top: 1px solid rgb(209, 205, 205);
+    border-right: 1px solid rgb(209, 205, 205);
+    border-bottom: 1px solid rgb(209, 205, 205);
+
+}
+
+.Quantity>div:nth-child(3):hover {
+    background-color: rgb(226, 223, 223);
+}
+
+.del {
+    font-size: 14px;
+    opacity: 0.6;
+}
+
+#bottomdiv {
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    border-top: 1px solid rgb(228, 223, 223);
+    height: 65px;
+    display: grid;
+    grid-template-columns: 56% 28% 16%;
+    background-color: white;
+}
+
+/* #bottomdiv>div{
+    border-top: 1px solid rgb(255, 0, 0);
+
+} */
+#bottomdiv>div:nth-child(2) {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+}
+
+#totalPrice {
+    display: grid;
+    /* border: 1px solid green; */
+    align-items: center;
+}
+
+#totalPrice>span {
+    font-size: 1.5rem;
+}
+
+/* #checkout{
+    border: 1px solid green;
+} */
+#checkout>button {
+    width: 100%;
+    height: 100%;
+    background-color: #df0808;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    border: none;
+    cursor: pointer;
+}
+
+#checkout>button::before {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgb(212, 11, 11);
+    z-index: -1;
+    transform: translateX(-100%);
+    transition: all 0.3s ease-out;
+}
+
+#checkout>button:hover::before {
+    transform: translateX(0);
+}
+
+#checkout>button>a {
+    font-size: 16px;
+    text-decoration: none;
+    color: white;
+}
+
+
+ 
+    .contentMiddle {
+        grid-template-columns: repeat(1, 100%);
+
+    }
+
+    #bottomdiv {
+        bottom: -25px;
+        height: 80px;
+        grid-template-columns: 70% 30%;
+
+    }
+
+    #bottmdiv>div>div:nth-child(2) {
+        margin-right: 20px;
+    }
+
+    #checkout {
+        margin-right: 20px;
+    }
+
+    #checkout>button {
+
+        height: 120%;
+
+    }
+

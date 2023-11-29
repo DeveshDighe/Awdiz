@@ -1,0 +1,495 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'ducati', Arial, sans-serif;
+}
+
+body{
+    scroll-behavior: smooth;
+}
+
+.imgsize{
+    width: 100%;
+    height: 100%;
+}
+.backgroundImg{
+    width: 100%;
+    height: 70vh;
+    background-image: url('https://images.ctfassets.net/x7j9qwvpvr5s/53SG3375bSo3Z3qu8lmNTu/439f25166cd5b48e7bf0de1ccd7a6688/DRE-hero-1600x1000_5140.jpg?fm=webp&q=80');
+    background-size: 100% 170%;
+    background-position: left;
+    position: relative;
+}
+
+.Academy{
+    display: flex;
+    position: absolute;
+    bottom: 0px;
+    /* border: 1px solid green; */
+    width: 100%;
+    height: 300px;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+.Academy>:nth-child(1){
+    color: white;
+    margin-left: 300px;
+    font-size: 0.95rem;
+    /* border: 1px solid green; */
+    display: block;
+}
+
+
+.Academy>:nth-child(2){
+    color: rgb(0, 102, 255);
+    margin-left: 300px;
+    font-size: 3rem;
+    display: block;
+    font-weight: lighter;
+    letter-spacing: 2.5px;
+}
+
+.info{
+    background-color: white;
+    height: 680px;
+}
+
+.main_Content{
+    width: 40%;
+    /* border: 1px solid black; */
+    margin: auto;
+    height: 75%;
+    padding: 20px;
+}
+
+.main_Content>p{
+    font-size: 1.1rem;
+    color: rgb(112 112 112);
+    letter-spacing: 2px;
+    font-weight: lighter;
+    line-height: 25px;
+    margin-bottom: 1rem;
+}
+.main_Content>p>strong{
+    color: black;
+    font-weight: lighter;
+}
+.main_Content>p>a{
+    font-size: 1.1rem;
+    color: rgb(112 112 112);
+    letter-spacing: 2px;
+    font-weight: lighter;
+    line-height: 25px;
+    margin-bottom: 1rem;
+}
+
+.Discover{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 25%;
+    width: 40%;
+    /* border: 1px solid black; */
+    margin: auto;
+}
+
+.Discover>h2{
+    font-size: 2rem;
+    font-weight: lighter;
+    letter-spacing: 2px;
+}
+
+.imagesdiv{
+    /* height: 900px; */
+}
+.imagesdiv>div{
+    width: 70%;
+    margin: auto;
+    /* border: 1px solid red; */
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 50% 50%;
+    gap: 40px;
+    padding-bottom: 40px;
+}
+.images{
+    /* border: 1px solid black; */
+    position: relative;
+}
+
+.images>div{
+    position: absolute;
+    bottom: 0px;
+    height: 140px;
+    width: 100%;
+    /* border: 1px solid green; */
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 40px;
+    background-image: linear-gradient(to top, #0f0f0f, rgba(0,0,0,0) 60%);
+}
+
+.images>div>span{
+    display: block;
+    margin-bottom: 10px;
+    color: white;
+}
+.images>div>:nth-child(1){
+    font-size: 0.9rem;
+}
+.images>div>:nth-child(2){
+    font-size: 1.1rem;
+}
+
+
+.email{
+    width: 40%;
+    margin: auto;
+    /* border: 1px solid red; */
+    margin-top: 100px;
+}
+
+.email>p{
+    font-size: 1.1rem;
+    color: #363636;
+    letter-spacing: 2px;
+    font-weight: lighter;
+    line-height: 25px;
+    margin-bottom: 1rem;
+}
+.email>p>a{
+    font-size: 1.1rem;
+    color: #363636;
+    letter-spacing: 2px;
+    font-weight: lighter;
+    line-height: 25px;
+    margin-bottom: 1rem;
+}
+
+.email_img{
+    height: 400px;
+    width: 100%;
+    /* border: 1px solid green; */
+    margin-top: 50px;
+}
+
+.signUp{
+    width: 50%;
+    /* border: 1px solid black; */
+    /* height: 300px; */
+    margin: auto;
+    margin-top: 100px;
+   text-align: center;
+}
+
+.signUp>h1{
+    font-weight: lighter;
+    margin-bottom: 20px;
+}
+.signUp>span , a{
+    font-size: 12px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.signUp>p{
+    font-size: 12px;
+    color: #666;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+#Getting_Enail{
+    width: 65%;
+    margin: auto;
+    
+    display: flex;
+    justify-content: space-between;
+    /* border: 1px solid green; */
+    margin-bottom: 20px;
+}
+
+#input{
+    /* border: 1px solid red; */
+}
+#input>input{
+    height: 60px;
+    width: 400px;
+    border: 1px solid rgb(224, 224, 224);
+    font-size: 20px;
+    padding-left: 20px;
+}
+
+#input>input:focus{
+    outline: none;
+}
+#button{
+    display: flex;
+    /* border: 1px solid red; */
+    width: 200px;
+    background-image: linear-gradient(to bottom, red, #c00);
+    justify-content: center;
+}
+#button>a{
+    font-size: 16px;
+    text-decoration: none;
+    color: white;
+    margin-top: 20px;
+}
+
+::placeholder{
+    font-size: 20px;
+    font-weight: lighter;
+    /* padding-left: 20px; */
+}
+
+#privacy{
+    font-size: 14px;
+    color: rgb(185 185 185);
+}
+
+#privacy>a{
+    color: rgb(185 185 185);
+}
+
+
+
+
+
+@media (min-width: 1000px) and (max-width: 1500px){
+
+    .info{
+        background-color: white;
+        height: 500px;
+    }
+
+    .main_Content{
+        width: 100%;
+    }
+
+    .imagesdiv>div{
+        width: 100%;
+    }
+
+    .signUp{
+        width: 70%;
+    }
+
+    .email{
+        width: 60%;
+    }
+    #input>input{
+        height: 60px;
+        width: 450px;
+    }
+
+    #button{
+        width: 250px;
+    }
+}
+    
+
+@media (min-width: 300px) and (max-width: 1000px){
+    .backgroundImg{
+        width: 100%;
+        height: 60vh;
+        background-image: url('https://images.ctfassets.net/x7j9qwvpvr5s/4fNjS4cMAHYOTy3tar6OAf/809491ee326724dde0fa772d89f73d54/DRE-hero-740x850_5140.jpg?fm=webp&q=80');
+        background-size: 160% 100%;
+        background-position: top;
+        position: relative;
+        margin-bottom: 100px;
+    }
+
+
+    .Academy{
+        width: 100%;
+        height: 500px;
+        flex-direction: column;
+        row-gap: 10px;
+    }
+    
+    .Academy>:nth-child(1){
+        color: white;
+        margin-left: 30px;
+        font-size: 2.7rem;
+        /* border: 1px solid green; */
+        display: block;
+    }
+    
+    
+    .Academy>:nth-child(2){
+        color: rgb(225 225 225);
+        margin-left: 30px;
+        font-size: 6rem;
+    }
+
+
+    .info{
+        background-color: white;
+        height: 3400px;
+    }
+    
+    .main_Content{
+        width: 100%;
+    }
+    
+    .main_Content>p{
+        font-size: 4rem;
+        line-height: 80px;
+        margin-bottom: 3rem;
+    }
+    .main_Content>p>strong{
+        color: black;
+        font-weight: lighter;
+    }
+    .main_Content>p>a{
+        font-size: 4rem;
+
+    
+}
+
+.Discover{
+    width: 100%;
+    text-align: center;
+}
+
+.Discover>h2{
+    font-size: 6rem;
+}
+
+.imgsize{
+    width: 50%;
+    height: 100%;
+}
+
+.imagesdiv{
+    /* height: 900px; */
+}
+.imagesdiv>div{
+    width: 95%;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(6, 500px) ;
+    gap: 100px;
+    padding-bottom: 40px;
+}
+.images{
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: space-between;
+    box-shadow: -2px -30px 60px -20px rgba(102, 102, 102, 0.45),
+    0px 30px 60px -20px rgba(102, 102, 102, 0.45);
+    height: 450px;
+}
+
+.images>div{
+   width: 50%;
+   position: relative;
+   height: 100%;
+   background-image: none;
+}
+
+.images>div>span{
+    
+    display: block;
+    margin-bottom: 10px;
+    color: rgb(0, 0, 0);
+}
+.images>div>:nth-child(1){
+    margin-top: 140px;
+    font-size: 2rem;
+    padding-bottom: 40px;
+    opacity: 0.6;
+}
+.images>div>:nth-child(2){
+    font-size: 2.5rem;
+    padding-bottom: 290px;
+}
+
+
+.email{
+    width: 100%;
+    padding: 40px;
+}
+
+.email>p{
+    font-size: 3.5rem;
+    color: #757575;
+    line-height: 100px;
+    margin-bottom: 3rem;
+}
+.email>p>a{
+    font-size: 3.5rem;
+    color: #8f8f8f;
+    letter-spacing: 2px;
+    font-weight: lighter;
+    line-height: 25px;
+    margin-bottom: 1rem;
+}
+
+.email_img{
+    height: 600px;
+}
+
+.signUp{
+    padding: 40px;
+    width: 100%;
+}
+.signUp>h1{
+    font-size: 5rem;
+    margin-bottom: 70px;
+}
+
+.signUp>span , a{
+    font-size: 0.8rem;
+    opacity: 0.8;
+}
+
+.signUp>p{
+    font-size: 0.8rem;
+
+}
+#Getting_Enail{
+    flex-direction: column;
+    gap: 50px;
+}
+
+#input>input{
+    margin-left: 0px;
+    width: 600px;
+    height: 100px;
+    padding-left: 60px;
+    font-size: 3rem;
+    
+}
+
+#button{
+    display: flex;
+    /* border: 1px solid red; */
+    width: 500px;
+    padding: 30px;
+    margin-left: 40px;
+    margin-bottom: 30px;
+}
+
+#button>a{
+    font-size: 3rem;
+    text-decoration: none;
+    color: white;
+    margin-top: 20px;
+}
+
+::placeholder{
+    font-size: 40px;
+    font-weight: lighter;
+    /* padding-left: 20px; */
+}
+
+}
+
+
+

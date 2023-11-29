@@ -1,0 +1,56 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.iconz{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    margin: auto;
+    margin-top: 300px;
+}
+
+ul > li{
+    width: 60px;
+    display: inline-block;
+}
+
+a{
+    display: flex;
+    /* gap: 90px; */
+    text-decoration: none;
+    color: black;
+}
+
+
+
+@media screen and (max-width: 1500px){
+    a{
+        color: rgb(0, 0, 0);
+        flex-direction: column;
+    }
+
+    ul{
+        position: absolute;
+        top: 30px;
+        left: 0px;
+        display: block;
+        max-height: 0px;
+        overflow: hidden;
+        transition: max-height 0.2s;
+    }
+
+    .kk.newClass{
+        max-height: 140px;
+    }
+    ul > li{
+        background-color: palevioletred;
+        width: 60px;
+        display: block;
+        margin-bottom: 20px;
+    }
+}
+

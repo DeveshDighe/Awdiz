@@ -8,10 +8,133 @@
         
         </title>
 
+        <style>
+            :root{
+                --color1 : red;
+                
+            }
+
+            .g{
+                font-size: 43px;
+                color: red;
+            }
+            p>.g{
+                font-size: 43px;
+                color: rgb(0, 255, 115);
+            }
+            /* input[type="checkbox"]
+            {
+                appearance: none;
+                border: 1px solid red;
+                height: 10px;
+                width: 10px;
+                display: none;
+            }
+            
+            input[type="checkbox"]:checked + label::after{
+                content: '';
+                display: block;
+                position: absolute;
+                top: 3px;
+                left: 9px;
+                width: 8px;
+                height: 14px;
+                border: solid white;
+                border-width:  0 2px  2px 0;
+                transform: rotate(45deg);
+                
+            }
+            label{
+                position: relative;
+                font-size: 20px;
+                color: green;
+            }
+            
+           
+
+            label::before{
+                content: '';
+                padding: 3px;
+                border: 1px solid rgb(119, 119, 119);
+                width: 20px;
+                height: 20px;
+                position: relative;
+                margin-right: 7px;
+                display: inline-block;
+                vertical-align: middle;
+                border-radius: 2px;
+            }
+            input:hover + label::before{
+                border: 1px solid red;
+            }
+            input:checked + label::before{
+                content: '';
+                background-color: red;
+            } */
+
+            label{
+                position: relative;
+                font-size: 20px;
+                color: green;
+                
+            }
+
+            input[type=checkbox]{
+                display: none;
+                position: relative;
+            }
+            input[type=checkbox]:checked + label::before{
+                content: '';
+                background-color: red;
+            }
+
+            label::before{
+                content: '';
+                border: 1px solid rgb(131, 131, 131);
+                margin-left: 10px;
+                width: 15px;
+                height: 15px;
+                display: inline-block;
+                margin-right: 5px;
+                vertical-align: middle;
+                border-radius: 2px;
+            }
+            input[type=checkbox]:checked + label::before{
+                border: 1px solid red;
+            }
+
+            input[type=checkbox]:checked + label::after{
+                content: '';
+                border: 1px solid white;
+                width: 4px;
+                height: 10px;
+                top: 6px;
+                left: 15px;
+                display: block;
+                position: absolute;
+                border-width: 0px 2px 2px 0px;
+                transform: rotate(45deg);
+            }
+
+            input[type=checkbox]:hover + label::before{
+                border: 1px solid var(--color1);
+            }
+
+        </style>
+
     </head>
 
     <body>
         This is first try
+
+        <div>
+            <input type="checkbox" id="c" >
+            <label for="c">check here</label>
+        </div>
+
+        <h1 class="g">hii i m devesh</h1>
+
+        <p class="g">this is my paragraph</p>
     </body>
 
 </html>
