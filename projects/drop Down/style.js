@@ -1,13 +1,13 @@
 var element1 = document.getElementById('UlId'); 
 function drop(){
-    element1.classList.toggle('newClass');
-    let f = confirm('are you 18');
-    if(f){
-        alert('you are allowed')
-    }
-    else{
-        alert('you are not allowed')
-    }
+    element1.classList.toggle('newClass');       //when i click on icon it will add this class name to ul And if it already there then it will remove
+    // let f = confirm('are you 18');
+    // if(f){
+    //     alert('you are allowed')
+    // }
+    // else{
+    //     alert('you are not allowed')
+    // }
 }
 var s = document.getElementById('f');
 function hekko(){

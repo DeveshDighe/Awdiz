@@ -1,0 +1,428 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'ducati', Arial, sans-serif;
+    font-weight: lighter;
+}
+
+.recomendedImg::-webkit-scrollbar{
+    width: .4em;
+    height: 3px;
+    padding: 0px;
+}
+
+.recomendedImg::-webkit-scrollbar-track{
+    background: none;
+}
+
+.recomendedImg::-webkit-scrollbar-thumb{
+    background: grey;
+    border-radius: 100vw;
+    
+}
+
+.img{
+    height: 100%;
+    width: 100%;
+}
+.ContryImg{
+    height: 15px;
+    width: 20px;
+}
+.Collection{
+    height: 975px;
+    width: 100%;
+    background-image: url('https://shop.ducati.com/media/wysiwyg/W46_D_AND03563_UC579245_1__7.jpg');
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    margin-bottom: 100px;
+}
+
+.mainNav{
+    /* border: 1px solid red; */
+    height: 70px;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 310px;
+    background-image: linear-gradient(to top,transparent 0%,rgba(0,0,0,.6) 100%);
+}
+
+.mainNav>div{
+    /* border: 1px solid rgb(0, 0, 0); */
+    width: 427px;
+}
+
+
+.bottomNav{
+    /* border: 1px solid black; */
+    width: 70%;
+    height: 100px;
+    position: fixed;
+    top: 70px;
+    left: 280px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 50px;
+    background-color: rgb(249,249,249);
+    z-index: 10;
+}
+
+.firstSection{
+    /* border: 1px solid green; */
+    width: 42%;
+    align-items: center;
+    display: flex;
+}
+.firstSection>div>span{
+    margin-left: 20px;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+
+.logoSection{
+    padding-top: 10px;
+    /* border: 1px solid green; */
+    width: 10%;
+    display: flex;
+    justify-content: center;
+}
+
+
+.ThirdSection{
+    /* border: 1px solid green; */
+    width: 42%;
+    align-items: center;
+    display: flex;
+}
+
+.ThirdSection>div>span{
+    margin-left: 20px;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+.ThirdSection>div>span:nth-child(2){
+    margin-right: 150px;
+}
+.ThirdSection>div>svg{
+    margin-right: 20px;
+}
+
+.motercycle{
+    display: flex;
+    align-items: center;
+    width: 417px;
+}
+.motercycle>span{
+    font-weight: 1000;
+    font-size: 0.8rem;
+    color: rgb(244 244 244);
+    
+}
+.dukati{
+    width: 437px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dukati>p{
+    font-size: 0.9rem;
+    color: rgb(244 244 244);
+    font-weight: 600;
+    letter-spacing: 0.2px;
+}
+
+.Country{
+    display: flex;
+    align-items: center;
+}
+
+.Country>div{
+   
+}
+.Country>div:nth-child(1){
+    /* border: 1px solid red; */
+    width: 80%; 
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    height: 20px;
+}
+
+.Country>div:nth-child(1)>img{
+    margin-right: 15px;
+}
+
+.AU-EN{
+    font-size: 0.7rem;
+    font-weight: bold;
+    color: rgb(244 244 244);
+    margin-right: 15px;
+}
+.Country>div:nth-child(1)>i{
+    color: rgb(244 244 244);
+    margin-right: 15px;
+}
+.line{
+    color: rgb(244 244 244);
+    margin-right: 15px;
+}
+
+
+.Country>div:nth-child(2){
+    /* border: 1px solid green; */
+    width: 20%;
+    height: 20px;
+    display: flex;
+    align-items: center;
+}
+
+
+
+.myDukati{
+    font-size: 0.7rem;
+    font-weight: bold;
+    color: rgb(244 244 244);
+    margin-right: 15px;
+}
+
+.Country>div:nth-child(2)>i{
+    color: rgb(244 244 244);
+    margin-right: 15px;
+}
+
+.NewCollection{
+    /* border: 1px solid rgb(251, 255, 0) ; */
+    height: 300px;
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
+    background-image: linear-gradient(to bottom,rgba(0,0,0,0) 0%,rgba(0,0,0,.6) 50%,rgba(0,0,0,.6) 100%);
+}
+
+.NewCollectionText{
+    width: 25%;
+    /* border: 1px solid red; */
+    height: 100%;
+    margin-left: 300px;
+    
+}
+
+.NewCollectionText>h1{
+    font-size: 53px;
+    font-weight: lighter;
+    color: rgb(244 244 244);
+    margin-bottom: 20px;
+}
+.NewCollectionText>p{
+    font-size: 18px;
+    font-weight: lighter;
+    color: rgb(244 244 244);
+}
+
+#button{
+    margin-top: 30px;
+    display: flex;
+    /* border: 1px solid red; */
+    width: 180px;
+    height: 55px;
+    background-image: linear-gradient(to bottom, red, #c00);
+    justify-content: center;
+    border-radius: 3px;
+}
+#button:hover{
+    background-image: linear-gradient(to top, red, #c00);
+}
+#button>a{
+    font-size: 14px;
+    text-decoration: none;
+    color: white;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.recomended{
+    width: 100%;
+    /* border: 1px solid red; */
+    height: 470px;
+}
+
+.recomended>h2{
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+.recomendedImg{
+    /* border: 1px solid green; */
+    width: 60%;
+    margin: auto;
+    height: 370px;
+    overflow: auto;
+    display: grid;
+    grid-template-columns: 288px 288px 288px 288px 288px 288px;
+    column-gap: 3px;
+    margin-top: 50px;
+}
+
+.recomendedImg>div{
+    /* border: 1px solid red; */
+    display: grid;
+    grid-template-rows: 65% 35%;
+}
+
+.recomendedImg>div>div{
+    /* border: 1px solid rgb(0, 255, 85); */
+}
+
+/* .recomendedImg>div>div:nth-child(1){
+    background-image: url(https://shop.ducati.com/media/catalog/product/cache/d737c4e9011f92407994a498031f753a/1/8/188c2ea614109d96c0ca3bf95b272118.jpg);
+    background-position: center; 
+    background-size: 70% 90%;
+    background-repeat: no-repeat;
+} */
+
+.recomendedImgText>p:nth-child(1){
+    font-size: 18px;
+    color: rgb(46, 46, 46);
+    margin-left: 10px;
+    margin-bottom: 40px;
+}
+.recomendedImgText>p:nth-child(2){
+    font-size: 21px;
+    font-weight: lighter;
+    margin-left: 10px;
+    color: rgb(100, 100, 100);
+}
+
+.Cap{
+    background-image: url(https://shop.ducati.com/media/catalog/product/cache/d737c4e9011f92407994a498031f753a/1/8/188c2ea614109d96c0ca3bf95b272118.jpg);
+    background-position: center; 
+    background-size: 70% 90%;
+    background-repeat: no-repeat;
+}
+.T-shirt{
+    background-image: url(https://shop.ducati.com/media/catalog/product/cache/d737c4e9011f92407994a498031f753a/p/e/pecco_world_champion_tshirt_fronte_rgb_5.jpg);
+    background-position: center; 
+    background-size: 70% 90%;
+    background-repeat: no-repeat;
+}
+.Leather{
+    background-image: url(https://shop.ducati.com/media/catalog/product/cache/d737c4e9011f92407994a498031f753a/e/4/e42d0b0ac16d3d63ab24c8c524668342.jpg);
+    background-position: center; 
+    background-size: 70% 90%;
+    background-repeat: no-repeat;
+}
+.Helmet{
+    background-image: url(https://shop.ducati.com/media/catalog/product/cache/d737c4e9011f92407994a498031f753a/c/7/c7075322c4be3e778b0a2c7d371e9b00.jpg);
+    background-position: center; 
+    background-size: 70% 90%;
+    background-repeat: no-repeat;
+}
+
+
+.TwoimgSec{
+
+    width: 65%;
+    margin: auto;
+    /* border: 1px solid red; */
+    height: 380px;
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 100px;
+    
+    
+}
+.TwoimgSec>div{
+    /* border: 1px solid green; */
+    width: 49%;
+    position: relative;
+}
+.TwoimgSec>div>div{
+    position: absolute;
+    /* border: 1px solid red; */
+    width: 50%;
+    height: 100%;
+    top: 0px;  
+    background-image: linear-gradient(to left,rgba(0,0,0,0) 0%,rgba(0,0,0,.6) 95%,rgba(0,0,0,.6) 100%);
+    
+}
+.TwoimgSec>div>div>h2{
+    font-size: 12px;
+    font-weight: bold;
+    margin-left: 20px;
+    color: rgb(224, 224, 224);
+    margin-top: 20px;
+}
+
+.WorldChamp{
+    width: 65%;
+    /* border: 1px solid black; */
+    height: 550px;
+    margin: auto;
+    position: relative;
+    margin-bottom: 100px;
+}
+
+.WorldChampContent{
+    position: absolute;
+    width: 35%;
+    /* border: 1px solid green; */
+    left: 0;
+    top: 0;
+    height: 100%;
+    background-image: linear-gradient(to left,rgba(0,0,0,0) 0%,rgba(0,0,0,.6) 95%,rgba(0,0,0,.6) 100%);
+    padding-left: 70px ;
+    padding-top: 50px;
+}
+
+.WorldChampContent>h2{
+    color: white;
+    margin-bottom: 5px;
+}
+
+.WorldChampContent>p{
+    color: white;
+    line-height: 1.5;
+    letter-spacing: 1.5px;
+}
+.WorldChampContent>div{
+    position: absolute;
+    bottom: 60px;
+}
+
+
+.backgroundImg{
+    background-position: center; 
+    background-size: 70% 90%;
+    background-repeat: no-repeat;
+}
+.FabricJacket{
+    background-image: url(https://shop.ducati.com/media/catalog/product/cache/d737c4e9011f92407994a498031f753a/e/d/ed89e1eeec258d5487405ae3980bbe2f.jpg);
+}
+
+.Pen{
+    background-image: url(https://shop.ducati.com/media/catalog/product/cache/d737c4e9011f92407994a498031f753a/a/a/aa94763f71c0cff8ba35cbfd4cc3a2d5.jpg);
+}
+
+.Notes{
+    background-image: url(https://shop.ducati.com/media/catalog/product/cache/d737c4e9011f92407994a498031f753a/4/b/4b2fc90cc805b7638104933ea70149d8.jpg);
+}
+
+.RedNotes{
+    background-image: url(https://shop.ducati.com/media/catalog/product/cache/d737c4e9011f92407994a498031f753a/0/3/03accc659c21ba669f6be600dcbdcbe4.jpg);
+}
+
+.FabrikWomen{
+    background-image: url(https://shop.ducati.com/media/catalog/product/cache/d737c4e9011f92407994a498031f753a/6/7/67983103d1bc9cb9e2f381c932914306.jpg);
+}
+.Garage{
+    background-image: url(https://shop.ducati.com/media/catalog/product/cache/d737c4e9011f92407994a498031f753a/9/7/97580171aa.jpg);
+}

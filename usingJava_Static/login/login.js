@@ -1,4 +1,4 @@
-function Register(event){
+function login(event){
   
     event.preventDefault();
 
@@ -23,7 +23,8 @@ function Register(event){
             document.getElementById("email").value = ''
             document.getElementById("password").value = ''
 
-            window.location.href = "/Awdiz/projects/nike/mainpage/nike.html"
+            window.location.href = "../../projects/nike/mainpage/nike.html"
+            
 
             return alert('Login successful')
         }
