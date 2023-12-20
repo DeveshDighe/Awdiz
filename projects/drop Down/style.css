@@ -40,12 +40,21 @@ a{
         display: block;
         max-height: 0px;
         overflow: hidden;
-        transition: max-height 0.2s;
+        /* transition: max-height 0.2s; */
+        /* *** OR ** */
+        transition: ease-in-out 0.2s;
     }
-
+/* 
     .kk.newClass{
         max-height: 140px;
+    } */
+
+
+    /* *********** OR *************** */
+    .newClass{
+        max-height: 140px;
     }
+
     ul > li{
         background-color: palevioletred;
         width: 60px;

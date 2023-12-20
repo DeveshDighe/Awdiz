@@ -23,3 +23,10 @@ function hekko(){
 // for (key in obj) {
 //     console.log('The ' + key + 'of employee is ' + obj[key]);
 // }
+
+
+// ****** Toggle and classList
+/* In JavaScript, classList is a property of DOM elements that represents a live collection of the
+ class attributes of the element. The toggle method of classList is used to add or remove a class
+ from an element. If the class is present, it will be removed; if it's absent, it will be added.
+ */
